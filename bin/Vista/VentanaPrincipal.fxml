@@ -4,12 +4,18 @@
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaPrincipalController">
    <children>
       <MenuButton layoutX="35.0" layoutY="290.0" mnemonicParsing="false" text="Añadir">
         <items>
           <MenuItem fx:id="anadir" mnemonicParsing="false" onAction="#anadirEmpresa" text="Añadir Empresa" />
           <MenuItem mnemonicParsing="false" text="Añadir Alumno" />
+        </items>
+      </MenuButton>
+      <MenuButton layoutX="183.0" layoutY="290.0" mnemonicParsing="false" text="Modificar">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Modificar Empresa" />
+          <MenuItem mnemonicParsing="false" text="Modificar Alumno" />
         </items>
       </MenuButton>
    </children>

@@ -42,6 +42,7 @@ public class Main extends Application {
 	            stagePrincipal.show();
 	        } catch (IOException e) {
 	            //tratar la excepción.
+	        	System.out.println("no se visualiza la pantalla");
 	        }
 	   }
 	 /* Este método es llamado cuando se presiona el botón de la ventana principal
@@ -66,6 +67,30 @@ public class Main extends Application {
 
 	        } catch (Exception e) {
 	            //tratar la excepción
+	        	System.out.println("no se visualiza la pantalla");
+	        }
+			
+		}
+		public void mostrarAnadirAlumno() {
+	        try {
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirEmpresa.fxml"));
+	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
+	            /* Creamos la segunda ventana como otro stage */
+	            Stage ventana = new Stage();
+	            ventana.setTitle("Venta Dos");
+	            /* Le decimos a la ventana quién es la ventana original */
+	            ventana.initOwner(stagePrincipal);
+	            Scene scene = new Scene(anadirEmpresa);
+	            ventana.setScene(scene);
+
+	            VentanaDosController controller2 = loader.getController();
+	            controller2.setStagePrincipal(ventana);
+
+	            ventana.show();
+
+	        } catch (Exception e) {
+	            //tratar la excepción
+	        	System.out.println("no se visualiza la pantalla");
 	        }
 			
 		}

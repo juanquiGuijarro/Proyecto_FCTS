@@ -33,7 +33,8 @@ public class VentanaPrincipalController implements Initializable{
     @FXML
     private void anadirEmpresa() {
        	this.ProgramaPrincipal.mostrarAnadirEmpresa();
-    
-
 }
+    private void anadirAlumno() {
+    	this.ProgramaPrincipal.mostrarAnadirAlumno();
+    }
 }
