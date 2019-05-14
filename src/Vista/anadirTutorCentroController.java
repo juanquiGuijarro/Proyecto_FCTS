@@ -2,8 +2,7 @@ package Vista;
 
 import javafx.stage.Stage;
 
-public class VentanaDosController {
-
+public class anadirTutorCentroController {
 	private Stage ventana;
 
 	public void setStagePrincipal(Stage ventana) {
@@ -13,5 +12,4 @@ public class VentanaDosController {
 	public void closeWindow(){
 		this.ventana.close();
 	}
-
 }

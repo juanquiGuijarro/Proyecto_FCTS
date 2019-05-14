@@ -1,20 +1,29 @@
 package Vista;
 
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
 import application.Main;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.MenuButton;
+import javafx.scene.control.Button;
 
 public class VentanaPrincipalController implements Initializable{
 	
 	private  Main ProgramaPrincipal;
 
     @FXML
-    private MenuButton anadir;
-    private MenuButton Modificar;
+    private Button anadirA;
+    @FXML
+    private Button anadirE;
+    @FXML
+    private Button anadirTP;
+    @FXML
+    private Button anadirTC;
+   
+    @FXML
+    private Button modificar;
     
 
 
@@ -31,10 +40,23 @@ public class VentanaPrincipalController implements Initializable{
      * para eso llama al método del main */
     
     @FXML
-    private void anadirEmpresa() {
-       	this.ProgramaPrincipal.mostrarAnadirEmpresa();
-}
     private void anadirAlumno() {
     	this.ProgramaPrincipal.mostrarAnadirAlumno();
+    }
+    
+    @FXML
+    private void anadirEmpresa() {
+    	this.ProgramaPrincipal.mostrarAnadirEmpresa();
+    }
+    
+    @FXML
+    private void anadirTutorPracticas() {
+    	this.ProgramaPrincipal.mostrarAnadirTutorEmpresa();
+    	
+    }
+    @FXML
+    private void anadirTutorCentro() {
+    	this.ProgramaPrincipal.mostrarAnadirTutorCentro();
+    	
     }
 }

@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.MenuButton?>
-<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaPrincipalController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.VentanaPrincipalController">
    <children>
-      <MenuButton layoutX="35.0" layoutY="290.0" mnemonicParsing="false" text="Añadir">
-        <items>
-          <MenuItem fx:id="anadir" mnemonicParsing="false" onAction="#anadirEmpresa" text="Añadir Empresa" />
-          <MenuItem mnemonicParsing="false" text="Añadir Alumno" />
-        </items>
-      </MenuButton>
-      <MenuButton layoutX="183.0" layoutY="290.0" mnemonicParsing="false" text="Modificar">
-        <items>
-          <MenuItem mnemonicParsing="false" text="Modificar Empresa" />
-          <MenuItem mnemonicParsing="false" text="Modificar Alumno" />
-        </items>
-      </MenuButton>
+      <Button fx:id="anadirA" layoutX="58.0" layoutY="299.0" mnemonicParsing="false" onAction="#anadirAlumno" prefHeight="25.0" prefWidth="101.0" text="Añadir Alumno" />
+      <Button fx:id="anadirE" layoutX="216.0" layoutY="299.0" mnemonicParsing="false" onAction="#anadirEmpresa" text="Añadir empresa" />
+      <Button fx:id="anadirTP" layoutX="43.0" layoutY="354.0" mnemonicParsing="false" onAction="#anadirTutorPracticas" text="Añadir Tutor Practicas" />
+      <Button fx:id="anadirTC" layoutX="216.0" layoutY="354.0" mnemonicParsing="false" onAction="#anadirTutorCentro" text="Añadir Tutor Centro" />
    </children>
 </AnchorPane>

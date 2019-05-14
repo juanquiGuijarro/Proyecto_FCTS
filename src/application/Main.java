@@ -2,8 +2,11 @@ package application;
 	
 import java.io.IOException;
 
-import Vista.VentanaDosController;
+import Vista.AnadirTutorEmpresaController;
 import Vista.VentanaPrincipalController;
+import Vista.anadirAlumnoController;
+import Vista.anadirEmpresaController;
+import Vista.anadirTutorCentroController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -43,24 +46,46 @@ public class Main extends Application {
 	        } catch (IOException e) {
 	            //tratar la excepción.
 	        	System.out.println("no se visualiza la pantalla");
+	        	System.out.println(e.getMessage());
 	        }
 	   }
 	 /* Este método es llamado cuando se presiona el botón de la ventana principal
 	     * Lo llama el controlador de la vista principal
 	     */
+		public void mostrarAnadirAlumno() {
+	        try {
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirAlumno.fxml"));
+	            AnchorPane anadirAlumno = (AnchorPane) loader.load();
+	            /* Creamos la segunda ventana como otro stage */
+	            Stage ventana = new Stage();
+	            ventana.setTitle("Añadir Alumno");
+	            /* Le decimos a la ventana quién es la ventana original */
+	            Scene scene = new Scene(anadirAlumno);
+	            anadirAlumnoController controller2 = loader.getController();
+	            ventana.setScene(scene);
+	            ventana.show();
+
+	        } catch (Exception e) {
+	            //tratar la excepción
+	        	System.out.println("no se visualiza la pantalla");
+	        	System.out.println(e.getMessage());
+	        }
+			
+		}
+		
 		public void mostrarAnadirEmpresa() {
 	        try {
 	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirEmpresa.fxml"));
 	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
-	            ventana.setTitle("Venta Dos");
+	            ventana.setTitle("Añadir Alumno");
 	            /* Le decimos a la ventana quién es la ventana original */
 	            ventana.initOwner(stagePrincipal);
 	            Scene scene = new Scene(anadirEmpresa);
 	            ventana.setScene(scene);
 
-	            VentanaDosController controller2 = loader.getController();
+	            anadirEmpresaController controller2 = loader.getController();
 	            controller2.setStagePrincipal(ventana);
 
 	            ventana.show();
@@ -71,19 +96,20 @@ public class Main extends Application {
 	        }
 			
 		}
-		public void mostrarAnadirAlumno() {
+
+		public void mostrarAnadirTutorEmpresa() {
 	        try {
-	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirEmpresa.fxml"));
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirTutor_Empresa.fxml"));
 	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
-	            ventana.setTitle("Venta Dos");
+	            ventana.setTitle("Añadir Tutor Empresa");
 	            /* Le decimos a la ventana quién es la ventana original */
 	            ventana.initOwner(stagePrincipal);
 	            Scene scene = new Scene(anadirEmpresa);
 	            ventana.setScene(scene);
 
-	            VentanaDosController controller2 = loader.getController();
+	            AnadirTutorEmpresaController controller2 = loader.getController();
 	            controller2.setStagePrincipal(ventana);
 
 	            ventana.show();
@@ -91,10 +117,36 @@ public class Main extends Application {
 	        } catch (Exception e) {
 	            //tratar la excepción
 	        	System.out.println("no se visualiza la pantalla");
+	        	System.out.println(e.getMessage());
+	        	
 	        }
 			
 		}
+		
+		public void mostrarAnadirTutorCentro() {
+	        try {
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirTutor_Centro.fxml"));
+	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
+	            /* Creamos la segunda ventana como otro stage */
+	            Stage ventana = new Stage();
+	            ventana.setTitle("Añadir Tutor Centro");
+	            /* Le decimos a la ventana quién es la ventana original */
+	            ventana.initOwner(stagePrincipal);
+	            Scene scene = new Scene(anadirEmpresa);
+	            ventana.setScene(scene);
 
-	
+	            anadirTutorCentroController controller2 = loader.getController();
+	            controller2.setStagePrincipal(ventana);
+
+	            ventana.show();
+
+	        } catch (Exception e) {
+	            //tratar la excepción
+	        	System.out.println("no se visualiza la pantalla");
+	        	System.out.println(e.getMessage());
+	        	
+	        }
+			
+		}
 }
 
