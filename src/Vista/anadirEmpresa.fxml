@@ -6,97 +6,97 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.anadirEmpresaController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="414.0" prefWidth="674.0" style="-fx-background-color: #1d1d1d;" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.anadirEmpresaController">
    <children>
-      <Text layoutX="212.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir Empresa" wrappingWidth="243.029296875">
+      <Text fill="WHITE" layoutX="212.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir Empresa" wrappingWidth="243.029296875">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Button layoutX="513.0" layoutY="352.0" mnemonicParsing="false" text="Añadir" />
-      <Text layoutX="72.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Convenio">
+      <Button layoutX="513.0" layoutY="352.0" mnemonicParsing="false" style="-fx-border-radius: 7;" text="Añadir" />
+      <Text fill="WHITE" layoutX="72.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Convenio">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="48.0" layoutY="90.0" />
-      <Text layoutX="52.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIF">
+      <TextField layoutX="48.0" layoutY="90.0" prefHeight="37.0" prefWidth="176.0" />
+      <Text fill="WHITE" layoutX="52.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIF">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="48.0" layoutY="146.0" />
-      <Text layoutX="458.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Representante">
+      <TextField layoutX="48.0" layoutY="146.0" prefHeight="37.0" prefWidth="176.0" />
+      <Text fill="WHITE" layoutX="458.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Representante">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="442.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF Representante">
+      <Text fill="WHITE" layoutX="442.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NIF Representante">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
       <TextField layoutX="431.0" layoutY="90.0" />
       <TextField layoutX="431.0" layoutY="146.0" />
-      <Text layoutX="54.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Empresa">
+      <Text fill="WHITE" layoutX="52.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Empresa">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="49.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País">
+      <Text fill="WHITE" layoutX="49.0" layoutY="255.0" strokeType="OUTSIDE" strokeWidth="0.0" text="País">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="49.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad">
+      <Text fill="WHITE" layoutX="49.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="436.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia">
+      <Text fill="WHITE" layoutX="442.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Provincia">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="262.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dirección">
+      <Text fill="WHITE" layoutX="262.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="dirección">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="433.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo postal">
+      <Text fill="WHITE" layoutX="436.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Codigo postal">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="263.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
+      <Text fill="WHITE" layoutX="263.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="242.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax">
+      <Text fill="WHITE" layoutX="242.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="242.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CiudadFirma">
+      <Text fill="WHITE" layoutX="242.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CiudadFirma">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text layoutX="238.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FechaFirma">
+      <Text fill="WHITE" layoutX="238.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FechaFirma">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="48.0" layoutY="201.0" />
-      <TextField layoutX="48.0" layoutY="257.0" />
-      <TextField layoutX="48.0" layoutY="314.0" />
-      <TextField layoutX="431.0" layoutY="197.0" />
+      <TextField layoutX="48.0" layoutY="201.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField layoutX="48.0" layoutY="257.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField layoutX="48.0" layoutY="314.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField layoutX="431.0" layoutY="201.0" />
       <TextField layoutX="431.0" layoutY="257.0" />
-      <TextField layoutX="232.0" layoutY="314.0" />
-      <TextField layoutX="233.0" layoutY="90.0" />
-      <TextField layoutX="233.0" layoutY="146.0" />
-      <TextField layoutX="241.0" layoutY="201.0" />
-      <TextField layoutX="241.0" layoutY="259.0" />
+      <TextField layoutX="235.0" layoutY="314.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField layoutX="233.0" layoutY="90.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField layoutX="233.0" layoutY="146.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField layoutX="235.0" layoutY="201.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField layoutX="235.0" layoutY="257.0" prefHeight="37.0" prefWidth="188.0" />
    </children>
 </AnchorPane>
