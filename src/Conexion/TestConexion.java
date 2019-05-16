@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
@@ -13,8 +14,8 @@ import java.util.Scanner;
 public class TestConexion {
 	private String bd;
 	private String url= "";
-	private String usr = "";
-	private String pwd = "";
+	private String usr= "";
+	private String pwd= "";
 	private static Connection conexion;
 	
 
@@ -23,15 +24,18 @@ public class TestConexion {
 		Properties propiedades = new Properties();
 		InputStream entrada = null; 
 		try {
-			File miFichero = new File("src/configuracionBBDD.ini");
+			File miFichero = new File("src/Conexion/ConexionBBDD.ini");
 			if (miFichero.exists()) {
 				entrada = new FileInputStream(miFichero);
 				//cargamos el archivo
 				propiedades.load(entrada);
 				//obrenemos las propiedades
-				System.out.println(propiedades.getProperty("basedatos"));
-				System.out.println(propiedades.getProperty("usuario"));
-				System.out.println(propiedades.getProperty("clave"));
+				url = propiedades.getProperty("url");
+				usr = propiedades.getProperty("usr");
+				pwd = propiedades.getProperty("pwd");
+				System.out.println(propiedades.getProperty("url"));
+				System.out.println(propiedades.getProperty("usr"));
+				System.out.println(propiedades.getProperty("pwd"));
 			}
 			else
 				System.out.println("Fichero no existe");
@@ -47,10 +51,9 @@ public class TestConexion {
 					}
 				}
 			}	
-	}
 		
 		
-		/*try {
+		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
 			conexion = DriverManager.getConnection(url, usr, pwd);
 			
@@ -67,20 +70,28 @@ public class TestConexion {
 			e.printStackTrace();
 		}
 		
-	}*/
-	public static int InsertarAramario(int numero, String letra) throws SQLException{
-		Statement stmt = conexion.createStatement();
-		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.ARMARIO VALUES ("+numero+",'"+letra+"')");
-		System.out.println("dato insertado");
-		return num1; 
 	}
-	public static int borrarAramario(int numero) throws SQLException{
+
+	public void InsertarAlumno(String DNI, String Nombre1, String Apellido1, String Email, String NombreEMP, String Pais, String Ciudad, String Provincia, String Direccion, int CP, String TFNO, String Fax) throws SQLException{
+		Statement stmt = conexion.createStatement();
+		System.out.println("INSERT INTO PRUEBA.ALUMNOS VALUES ("+DNI+","+Nombre1+","+Apellido1+","+Email+","+tlfno+")");
+		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.ALUMNOS VALUES ('"+DNI+"','"+Nombre1+"','"+Apellido1+"','"+Email+"','"+tlfno+"')");
+		System.out.println("dato insertado");
+	}
+	
+	public void InsertarEmpresa(String numConvenio, String CIF, String Representante, String NIFRP, String tlfno) throws SQLException{
+		Statement stmt = conexion.createStatement();
+		System.out.println("INSERT INTO PRUEBA.ALUMNOS VALUES ("+DNI+","+Nombre1+","+Apellido1+","+Email+","+tlfno+")");
+		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.ALUMNOS VALUES ('"+DNI+"','"+Nombre1+"','"+Apellido1+"','"+Email+"','"+tlfno+"')");
+		System.out.println("dato insertado");
+	}
+	/*public static int borrarAramario(int numero) throws SQLException{
 		Statement stmt = conexion.createStatement();
 		int num1= stmt.executeUpdate("DELETE FROM PRUEBA.ARMARIO WHRERW NUM_ARMARIO='numero'");
 		System.out.println("dato borrado");
 		return num1; 
-	}
-	public static int modificarAramario() throws SQLException{
+	}*/
+	/*public static int modificarAramario() throws SQLException{
 		Scanner sc = new  Scanner(System.in);
 	
 		System.out.println("Introduce un numero del armario:");
@@ -91,5 +102,5 @@ public class TestConexion {
 		int num1= stmt.executeUpdate("UPDATE TABLE PRUEBA.ARMARIO SET TIPO='letra'");
 		System.out.println("Dato Actualizado");
 		return num1; 
-	}
+	}*/
 }

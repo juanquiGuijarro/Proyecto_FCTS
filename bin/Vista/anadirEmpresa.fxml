@@ -19,13 +19,13 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="48.0" layoutY="90.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField fx:id="numconvenio" layoutX="48.0" layoutY="90.0" prefHeight="37.0" prefWidth="176.0" />
       <Text fill="WHITE" layoutX="52.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CIF">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="48.0" layoutY="146.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField fx:id="CIF" layoutX="48.0" layoutY="146.0" prefHeight="37.0" prefWidth="176.0" />
       <Text fill="WHITE" layoutX="458.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Representante">
          <font>
             <Font size="15.0" />
@@ -36,8 +36,8 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="431.0" layoutY="90.0" />
-      <TextField layoutX="431.0" layoutY="146.0" />
+      <TextField fx:id="Representante" layoutX="431.0" layoutY="90.0" />
+      <TextField fx:id="NIFRP" layoutX="431.0" layoutY="146.0" />
       <Text fill="WHITE" layoutX="52.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre Empresa">
          <font>
             <Font size="15.0" />
@@ -48,7 +48,7 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="49.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad">
+      <Text fill="WHITE" layoutX="239.0" layoutY="254.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ciudad">
          <font>
             <Font size="15.0" />
          </font>
@@ -73,30 +73,18 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="242.0" layoutY="310.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax">
+      <Text fill="WHITE" layoutX="262.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fax">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="242.0" layoutY="200.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CiudadFirma">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <Text fill="WHITE" layoutX="238.0" layoutY="253.0" strokeType="OUTSIDE" strokeWidth="0.0" text="FechaFirma">
-         <font>
-            <Font size="15.0" />
-         </font>
-      </Text>
-      <TextField layoutX="48.0" layoutY="201.0" prefHeight="37.0" prefWidth="176.0" />
-      <TextField layoutX="48.0" layoutY="257.0" prefHeight="37.0" prefWidth="176.0" />
-      <TextField layoutX="48.0" layoutY="314.0" prefHeight="37.0" prefWidth="176.0" />
-      <TextField layoutX="431.0" layoutY="201.0" />
-      <TextField layoutX="431.0" layoutY="257.0" />
-      <TextField layoutX="235.0" layoutY="314.0" prefHeight="37.0" prefWidth="188.0" />
-      <TextField layoutX="233.0" layoutY="90.0" prefHeight="37.0" prefWidth="188.0" />
-      <TextField layoutX="233.0" layoutY="146.0" prefHeight="37.0" prefWidth="188.0" />
-      <TextField layoutX="235.0" layoutY="201.0" prefHeight="37.0" prefWidth="188.0" />
-      <TextField layoutX="235.0" layoutY="257.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField fx:id="NombreEMP" layoutX="48.0" layoutY="201.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField fx:id="Pais" layoutX="48.0" layoutY="257.0" prefHeight="37.0" prefWidth="176.0" />
+      <TextField fx:id="Ciudad" layoutX="233.0" layoutY="257.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField fx:id="Provincia" layoutX="431.0" layoutY="201.0" />
+      <TextField fx:id="CP" layoutX="431.0" layoutY="257.0" />
+      <TextField fx:id="Fax" layoutX="233.0" layoutY="201.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField fx:id="Direccion" layoutX="233.0" layoutY="90.0" prefHeight="37.0" prefWidth="188.0" />
+      <TextField fx:id="TFNO" layoutX="233.0" layoutY="146.0" prefHeight="37.0" prefWidth="188.0" />
    </children>
 </AnchorPane>

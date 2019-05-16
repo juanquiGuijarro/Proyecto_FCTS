@@ -33,16 +33,16 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="57.0" layoutY="156.0" />
-      <TextField layoutX="53.0" layoutY="218.0" />
-      <TextField layoutX="53.0" layoutY="288.0" />
-      <TextField layoutX="284.0" layoutY="156.0" />
-      <Button layoutX="424.0" layoutY="334.0" mnemonicParsing="false" style="-fx-border-radius: 7;" text="Añadir" />
+      <TextField fx:id="DNIA" layoutX="57.0" layoutY="156.0" />
+      <TextField fx:id="Nombre" layoutX="53.0" layoutY="218.0" />
+      <TextField fx:id="Apellidos" layoutX="53.0" layoutY="288.0" />
+      <TextField fx:id="telefono" layoutX="284.0" layoutY="156.0" />
+      <Button fx:id="anadir" layoutX="424.0" layoutY="334.0" mnemonicParsing="false" onAction="#InsertadoAlumno" style="-fx-border-radius: 7;" text="Añadir" />
       <Text fill="WHITE" layoutX="298.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
          <font>
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="284.0" layoutY="218.0" />
+      <TextField fx:id="email" layoutX="284.0" layoutY="218.0" />
    </children>
 </AnchorPane>
