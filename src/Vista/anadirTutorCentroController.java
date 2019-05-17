@@ -30,6 +30,7 @@ public class anadirTutorCentroController {
 		String nombre2= nombre.getText();
 		String apellido2= apellidos.getText();
 		String email2= email.getText();
+		conexionbbdd.InsertarTutorCentro(dni1, nombre2, apellido2, email2);
 	}
 
 	

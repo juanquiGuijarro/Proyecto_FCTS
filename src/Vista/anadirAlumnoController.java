@@ -39,7 +39,7 @@ public class anadirAlumnoController {
 			System.out.println(Apellido1);
 			System.out.println(Email);
 			System.out.println(tlfno);
-			conexionbbdd.InsertarAlumno(DNI,Nombre1,Apellido1,Email,tlfno);
+			conexionbbdd.InsertarAlumno(DNI, Nombre1, Apellido1, Email, tlfno);
 			
 		}
 

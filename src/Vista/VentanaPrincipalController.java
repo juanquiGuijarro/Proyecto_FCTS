@@ -21,7 +21,6 @@ public class VentanaPrincipalController implements Initializable{
     private Button anadirTP;
     @FXML
     private Button anadirTC;
-   
     @FXML
     private Button modificar;
     

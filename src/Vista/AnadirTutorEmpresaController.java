@@ -33,6 +33,7 @@ public class AnadirTutorEmpresaController {
 		String apellido3= apellidos.getText();
 		String email3= email.getText();
 		String tfno3= tfno.getText();
+		conexionbbdd.InsertarTutorEmpresa(dni3, nombre3, apellido3, email3, tfno3);
 	}
 	public void setStagePrincipal(Stage ventana) {
 		// TODO Auto-generated method stub

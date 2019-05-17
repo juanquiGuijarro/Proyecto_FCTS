@@ -82,21 +82,21 @@ public class TestConexion {
 	public void InsertarEmpresa(String numConvenio, String CIF, String Representante, String NIFRP, String NombreEMP, String Pais, String Ciudad, String Provincia, String Direccion, int CP, String TFNO, String Fax) throws SQLException{
 		Statement stmt = conexion.createStatement();
 		System.out.println("INSERT INTO PRUEBA.EMPRESA VALUES ("+numConvenio+","+CIF+","+Representante+","+NIFRP+","+NombreEMP+","+Pais+","+Ciudad+","+Provincia+","+Direccion+","+CP+","+TFNO+","+Fax+")");
-		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.EMPRESA VALUES ('"+numConvenio+"','"+CIF+"','"+Representante+"','"+NIFRP+"','"+NombreEMP+"','"+Pais+"','"+Ciudad+"','"+Provincia+"','"+Direccion+"',"+CP+",'"+TFNO+"','"+Fax+"')");
+		int num2= stmt.executeUpdate("INSERT INTO PRUEBA.EMPRESA VALUES ('"+numConvenio+"','"+CIF+"','"+Representante+"','"+NIFRP+"','"+NombreEMP+"','"+Pais+"','"+Ciudad+"','"+Provincia+"','"+Direccion+"','"+CP+"','"+TFNO+"','"+Fax+"')");
 		System.out.println("dato insertado");
 	}
 	
 	public void InsertarTutorCentro(String dni1, String nombre2, String apellido2, String email2) throws SQLException{
 		Statement stmt = conexion.createStatement();
 		System.out.println("INSERT INTO PRUEBA.TUTORESCENTRO VALUES ("+dni1+","+nombre2+","+apellido2+","+email2+")");
-		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.TUTORESCENTRO VALUES ('"+dni1+"','"+nombre2+"','"+apellido2+"','"+email2+"')");
+		int num3= stmt.executeUpdate("INSERT INTO PRUEBA.TUTORESCENTRO VALUES ('"+dni1+"','"+nombre2+"','"+apellido2+"','"+email2+"')");
 		System.out.println("dato insertado");
 	}
 	
 	public void InsertarTutorEmpresa(String dni3, String nombre3, String apellido3, String email3, String tfno3) throws SQLException{
 		Statement stmt = conexion.createStatement();
 		System.out.println("INSERT INTO PRUEBA.TUTORESEMPRESA VALUES ("+dni3+","+nombre3+","+apellido3+","+email3+","+tfno3+")");
-		int num1= stmt.executeUpdate("INSERT INTO PRUEBA.TUTORESEMPRESA VALUES ('"+dni3+"','"+nombre3+"','"+apellido3+"','"+email3+"','"+tfno3+"')");
+		int num4= stmt.executeUpdate("INSERT INTO PRUEBA.TUTORESEMPRESA VALUES ('"+dni3+"','"+nombre3+"','"+apellido3+"','"+email3+"','"+tfno3+"')");
 		System.out.println("dato insertado");
 	}
 	/*public static int borrarAramario(int numero) throws SQLException{

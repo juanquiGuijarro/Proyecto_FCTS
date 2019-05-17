@@ -60,7 +60,7 @@ public class anadirEmpresaController {
 		String TFNO1=TFNO.getText();
 		String Fax1=Fax.getText();
 		
-		conexionbbdd.InsertarEmpresa(numConvenio,CIF1,Representante1,NIFRP1,NombreEMP1,Pais1,Ciudad1,Provincia1,Direccion1,CP1,TFNO1,Fax1);
+		conexionbbdd.InsertarEmpresa(numConvenio, CIF1, Representante1, NIFRP1, NombreEMP1, Pais1, Ciudad1, Provincia1, Direccion1, CP1, TFNO1, Fax1);
 		
 	}
 	public void closeWindow(){
