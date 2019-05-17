@@ -51,14 +51,16 @@ public class anadirEmpresaController {
 		String CIF1=CIF.getText();
 		String Representante1=Representante.getText();
 		String NIFRP1=NIFRP.getText();
+		String NombreEMP1=NombreEMP.getText();
+		String Pais1=Pais.getText();
 		String Ciudad1=Ciudad.getText();
 		String Provincia1=Provincia.getText();
 		String Direccion1=Direccion.getText();
-		String CP1=CP.getText();
+		int CP1=CP.getLength();
 		String TFNO1=TFNO.getText();
 		String Fax1=Fax.getText();
 		
-		conexionbbdd.InsertarEmpresa(numConvenio,CIF1,Representante1,NIFRP1,Ciudad1,CP1,TFNO1,Fax1);
+		conexionbbdd.InsertarEmpresa(numConvenio,CIF1,Representante1,NIFRP1,NombreEMP1,Pais1,Ciudad1,Provincia1,Direccion1,CP1,TFNO1,Fax1);
 		
 	}
 	public void closeWindow(){

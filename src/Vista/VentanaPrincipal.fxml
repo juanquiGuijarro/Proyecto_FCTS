@@ -16,7 +16,7 @@
             <Font size="36.0" />
          </font>
       </Text>
-      <Button fx:id="modificar" layoutX="268.0" layoutY="116.0" mnemonicParsing="false" style="-fx-border-radius: 7;" stylesheets="@../application/application.css" text="Modificar" textFill="WHITE" />
+      <Button fx:id="modificar" layoutX="268.0" layoutY="116.0" mnemonicParsing="false" onAction="#modificarDatos" style="-fx-border-radius: 7;" stylesheets="@../application/application.css" text="Modificar" textFill="WHITE" />
       <Text fill="WHITE" layoutX="43.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir">
          <font>
             <Font size="24.0" />
