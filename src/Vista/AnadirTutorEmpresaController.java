@@ -26,7 +26,7 @@ public class AnadirTutorEmpresaController {
     public Button anadir;
 
 	
-	public void InsertadoTutorC(ActionEvent event) throws SQLException{
+	public void InsertadoTutorE(ActionEvent event) throws SQLException{
 		TestConexion conexionbbdd = new TestConexion();
 		String dni3= dni.getText();
 		String nombre3= nombre.getText();

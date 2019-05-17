@@ -8,36 +8,36 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1d1d1d;" stylesheets="@../application/application.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vista.AnadirTutorEmpresaController">
    <children>
-      <Text fill="WHITE" layoutX="168.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir Tutor Practicas">
+      <Text fill="WHITE" layoutX="168.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Añadir Tutor Empresa">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Text fill="WHITE" layoutX="124.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI">
+      <Text fill="WHITE" layoutX="76.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DNI">
          <font>
             <Font size="15.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="123.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
+      <Text fill="WHITE" layoutX="74.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre">
          <font>
             <Font size="15.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="356.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos">
+      <Text fill="WHITE" layoutX="337.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Apellidos">
          <font>
             <Font size="15.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="366.0" layoutY="222.0" strokeType="OUTSIDE" strokeWidth="0.0" text="email">
+      <Text fill="WHITE" layoutX="337.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
          <font>
             <Font size="15.0" />
          </font></Text>
-      <Text fill="WHITE" layoutX="255.0" layoutY="290.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
+      <Text fill="WHITE" layoutX="73.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telefono">
          <font>
             <Font size="15.0" />
          </font></Text>
-      <TextField layoutX="73.0" layoutY="159.0" style="-fx-background-color: white;" />
-      <TextField layoutX="76.0" layoutY="225.0" style="-fx-background-color: white;" />
-      <TextField layoutX="337.0" layoutY="160.0" style="-fx-background-color: white;" />
-      <TextField layoutX="335.0" layoutY="238.0" style="-fx-background-color: white;" />
-      <TextField layoutX="216.0" layoutY="295.0" style="-fx-background-color: white;" />
-      <Button layoutX="477.0" layoutY="335.0" mnemonicParsing="false" style="-fx-border-radius: 7;" text="Añadir" />
+      <TextField fx:id="dni" layoutX="75.0" layoutY="94.0" style="-fx-background-color: white;" />
+      <TextField fx:id="nombre" layoutX="75.0" layoutY="170.0" style="-fx-background-color: white;" />
+      <TextField fx:id="apellidos" layoutX="337.0" layoutY="94.0" style="-fx-background-color: white;" />
+      <TextField fx:id="email" layoutX="337.0" layoutY="170.0" style="-fx-background-color: white;" />
+      <TextField fx:id="tfno" layoutX="75.0" layoutY="251.0" style="-fx-background-color: white;" />
+      <Button fx:id="anadir" layoutX="410.0" layoutY="253.0" mnemonicParsing="false" onAction="#InsertadoTutorE" style="-fx-border-radius: 7;" text="Añadir" />
    </children>
 </AnchorPane>

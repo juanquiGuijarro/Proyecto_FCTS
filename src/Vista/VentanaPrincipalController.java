@@ -59,4 +59,8 @@ public class VentanaPrincipalController implements Initializable{
     	this.ProgramaPrincipal.mostrarAnadirTutorCentro();
     	
     }
+    @FXML
+    private void modificarDatos() {
+    	this.ProgramaPrincipal.mostrarVentanaModificar();
+    }
 }

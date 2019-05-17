@@ -7,6 +7,7 @@ import Vista.VentanaPrincipalController;
 import Vista.anadirAlumnoController;
 import Vista.anadirEmpresaController;
 import Vista.anadirTutorCentroController;
+import Vista.modificarDatosController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
@@ -79,7 +80,7 @@ public class Main extends Application {
 	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
-	            ventana.setTitle("Añadir Alumno");
+	            ventana.setTitle("Añadir Empresa");
 	            /* Le decimos a la ventana quién es la ventana original */
 	            ventana.initOwner(stagePrincipal);
 	            Scene scene = new Scene(anadirEmpresa);
@@ -136,6 +137,32 @@ public class Main extends Application {
 	            ventana.setScene(scene);
 
 	            anadirTutorCentroController controller2 = loader.getController();
+	            controller2.setStagePrincipal(ventana);
+
+	            ventana.show();
+
+	        } catch (Exception e) {
+	            //tratar la excepción
+	        	System.out.println("no se visualiza la pantalla");
+	        	System.out.println(e.getMessage());
+	        	
+	        }
+			
+		}
+		
+		public void mostrarVentanaModificar() {
+	        try {
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/modificar_datos.fxml"));
+	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
+	            /* Creamos la segunda ventana como otro stage */
+	            Stage ventana = new Stage();
+	            ventana.setTitle("Modificar Datos");
+	            /* Le decimos a la ventana quién es la ventana original */
+	            ventana.initOwner(stagePrincipal);
+	            Scene scene = new Scene(anadirEmpresa);
+	            ventana.setScene(scene);
+
+	            modificarDatosController controller2 = loader.getController();
 	            controller2.setStagePrincipal(ventana);
 
 	            ventana.show();
