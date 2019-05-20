@@ -33,10 +33,10 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField layoutX="71.0" layoutY="102.0" stylesheets="@../application/application.css" />
-      <TextField layoutX="328.0" layoutY="102.0" />
-      <TextField layoutX="71.0" layoutY="211.0" />
-      <TextField layoutX="328.0" layoutY="211.0" />
-      <Button layoutX="248.0" layoutY="297.0" mnemonicParsing="false" style="-fx-border-radius: 7;" text="Añadir" />
+      <TextField fx:id="dni" layoutX="71.0" layoutY="102.0" stylesheets="@../application/application.css" />
+      <TextField fx:id="email" layoutX="328.0" layoutY="102.0" />
+      <TextField fx:id="nombre" layoutX="71.0" layoutY="211.0" />
+      <TextField fx:id="apellidos" layoutX="328.0" layoutY="211.0" />
+      <Button fx:id="anadir" layoutX="248.0" layoutY="297.0" mnemonicParsing="false" onAction="#InsertadoTutorC" style="-fx-border-radius: 7;" text="Añadir" />
    </children>
 </AnchorPane>

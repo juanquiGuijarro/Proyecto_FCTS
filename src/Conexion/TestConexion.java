@@ -103,8 +103,8 @@ public class TestConexion {
 		Statement stmt = conexion.createStatement();
 		int num1= stmt.executeUpdate("DELETE FROM PRUEBA.ARMARIO WHRERW NUM_ARMARIO='numero'");
 		System.out.println("dato borrado");
-		return num1; 
-	}*/
+		return num1; */
+	}
 	/*public static int modificarAramario() throws SQLException{
 		Scanner sc = new  Scanner(System.in);
 	
@@ -115,6 +115,5 @@ public class TestConexion {
 		Statement stmt = conexion.createStatement();
 		int num1= stmt.executeUpdate("UPDATE TABLE PRUEBA.ARMARIO SET TIPO='letra'");
 		System.out.println("Dato Actualizado");
-		return num1; 
-	}*/
-}
+		return num1; */
+	//}
