@@ -1,12 +1,13 @@
 package Vista;
 
-import java.awt.TextField;
+
 import java.sql.SQLException;
 
 import Conexion.TestConexion;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
 public class AnadirTutorEmpresaController {

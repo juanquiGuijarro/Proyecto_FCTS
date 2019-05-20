@@ -22,8 +22,13 @@ public class VentanaPrincipalController implements Initializable{
     @FXML
     private Button anadirTC;
     @FXML
-    private Button modificar;
-    
+    private Button modificarA;
+    @FXML
+    private Button modificarE;
+    @FXML
+    private Button modificarTC;
+    @FXML
+    private Button modificarTE;
 
 
     public void setProgramaPrincipal(Main ProgramaPrincipal) {
@@ -59,7 +64,7 @@ public class VentanaPrincipalController implements Initializable{
     	
     }
     @FXML
-    private void modificarDatos() {
-    	this.ProgramaPrincipal.mostrarVentanaModificar();
+    private void modificarA() {
+    	this.ProgramaPrincipal.mostrarVentanaModificarA();
     }
 }

@@ -33,7 +33,7 @@
             <Font size="15.0" />
          </font>
       </Text>
-      <TextField fx:id="dni" layoutX="71.0" layoutY="102.0" stylesheets="@../application/application.css" />
+      <TextField fx:id="dni" layoutX="71.0" layoutY="102.0" />
       <TextField fx:id="email" layoutX="328.0" layoutY="102.0" />
       <TextField fx:id="nombre" layoutX="71.0" layoutY="211.0" />
       <TextField fx:id="apellidos" layoutX="328.0" layoutY="211.0" />

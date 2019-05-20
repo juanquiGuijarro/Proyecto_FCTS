@@ -100,7 +100,7 @@ public class Main extends Application {
 
 		public void mostrarAnadirTutorEmpresa() {
 	        try {
-	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirTutor_Empresa.fxml"));
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/Vista/anadirTutor_Empresa.fxml"));
 	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
@@ -126,7 +126,7 @@ public class Main extends Application {
 		
 		public void mostrarAnadirTutorCentro() {
 	        try {
-	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/anadirTutor_Centro.fxml"));
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/Vista/anadirTutor_Centro.fxml"));
 	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
@@ -150,16 +150,16 @@ public class Main extends Application {
 			
 		}
 		
-		public void mostrarVentanaModificar() {
+		public void mostrarVentanaModificarA() {
 	        try {
-	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/modificar_datos.fxml"));
-	            AnchorPane anadirEmpresa = (AnchorPane) loader.load();
+	            FXMLLoader loader = new FXMLLoader(Main.class.getResource("../Vista/ModificarA.fxml"));
+	            AnchorPane ModificarDatos = (AnchorPane) loader.load();
 	            /* Creamos la segunda ventana como otro stage */
 	            Stage ventana = new Stage();
 	            ventana.setTitle("Modificar Datos");
 	            /* Le decimos a la ventana quién es la ventana original */
 	            ventana.initOwner(stagePrincipal);
-	            Scene scene = new Scene(anadirEmpresa);
+	            Scene scene = new Scene(ModificarDatos);
 	            ventana.setScene(scene);
 
 	            modificarDatosController controller2 = loader.getController();

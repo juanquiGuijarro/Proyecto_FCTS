@@ -11,6 +11,11 @@ import java.sql.Statement;
 import java.util.Properties;
 import java.util.Scanner;
 
+import Vista.Alumnos;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.scene.control.cell.PropertyValueFactory;
+
 public class TestConexion {
 	private String bd;
 	private String url= "";
@@ -104,16 +109,58 @@ public class TestConexion {
 		int num1= stmt.executeUpdate("DELETE FROM PRUEBA.ARMARIO WHRERW NUM_ARMARIO='numero'");
 		System.out.println("dato borrado");
 		return num1; */
+
+	public ObservableList<String> ConsultarAlumnos() {
+		
+		ObservableList<String> aux = FXCollections.observableArrayList();
+		
+		try {
+			Statement stmt = conexion.createStatement();
+			ResultSet rset = stmt.executeQuery("SELECT * FROM PRUEBA.ALUMNOS" );
+			while(rset.next()) {
+				aux.add(rset.getString(1));
+				aux.add(rset.getString(2));
+				aux.add(rset.getString(3));
+				aux.add(rset.getString(4));
+				aux.add(rset.getString(5));
+			}
+			rset.close();
+			stmt.close();
+			
+		}catch (SQLException s){
+			s.printStackTrace();
+		}
+		System.out.println(aux);
+		return aux;
+		
+		
 	}
-	/*public static int modificarAramario() throws SQLException{
-		Scanner sc = new  Scanner(System.in);
+
 	
-		System.out.println("Introduce un numero del armario:");
-		int num=sc.nextInt();
-		System.out.println("introduce el tamaño:");
-		String letra= sc.next();
-		Statement stmt = conexion.createStatement();
-		int num1= stmt.executeUpdate("UPDATE TABLE PRUEBA.ARMARIO SET TIPO='letra'");
-		System.out.println("Dato Actualizado");
-		return num1; */
-	//}
+	/*public ObservableList<Alumnos> consultarAlumno() {
+		ObservableList<Alumnos> aux = FXCollections.observableArrayList();
+		try {
+			Statement stmt = conexion.createStatement();
+			String query = "SELECT * FROM PRUEBA.ALUMNOS";
+			System.out.println(query);
+			ResultSet rset = stmt.executeQuery(query);
+			while(rset.next()) {
+				String DNIA = rset.getString(1);
+				String NOMBRE = rset.getString(2);
+				String APELLIDOS = rset.getString(3);
+				String EMAIL = rset.getString(4);
+				String TELEFONO = rset.getString(5);
+				Alumnos auxAlumnos = new Alumnos(DNIA,NOMBRE,APELLIDOS,EMAIL,TELEFONO);
+				aux.addAll(auxAlumnos);
+			}
+			rset.close();
+			stmt.close();
+			
+		}catch (SQLException s){
+			s.printStackTrace();
+		}
+		
+		return aux;
+	}*/
+	}
+	
