@@ -32,8 +32,7 @@ public class modificarDatosController {
 	@FXML
 	public Button VERTABLA;
 	
-	ObservableList<String> AlumnosList = FXCollections.observableArrayList("");
-	
+		
 	TestConexion conexionbbdd;
 	@FXML
 	public TableView <Alumnos> tabla;
@@ -53,22 +52,21 @@ public class modificarDatosController {
 	@FXML
 	public TableColumn <Alumnos,String> colTelefono;
 
-	private final ObservableList<Alumnos> data =FXCollections.observableArrayList(new Alumnos ("","","","",""));
+	private ObservableList<Alumnos> data =FXCollections.observableArrayList(new Alumnos ("","","","",""));
 	
 	@FXML
 	public void initalize(ActionEvent event) {
 		conexionbbdd= new TestConexion();
 		
-		AlumnosList =conexionbbdd.ConsultarAlumnos();
+		data =conexionbbdd.ConsultarAlumnos();
 		
 		tabla.setItems(data);
 		
-		colDNI.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("DNI Alumno"));
-		colNombre.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Nombre Alumno"));
-		colApellidos.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Apellidos Alumno"));
-		colEmail.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Email Alumno"));
-		colTelefono.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Telefono Alumno"));
-		AlumnosList = FXCollections.observableArrayList();
+		colDNI.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("DNI"));
+		colNombre.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Nombre"));
+		colApellidos.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Apellidos"));
+		colEmail.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Email"));
+		colTelefono.setCellValueFactory(new PropertyValueFactory<Alumnos,String>("Telefono"));
 	}
 	/*@FXML
 	public void ActualizaTabla(){

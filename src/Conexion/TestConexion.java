@@ -110,19 +110,16 @@ public class TestConexion {
 		System.out.println("dato borrado");
 		return num1; */
 
-	public ObservableList<String> ConsultarAlumnos() {
+	public ObservableList<Alumnos> ConsultarAlumnos() {
 		
-		ObservableList<String> aux = FXCollections.observableArrayList();
+		ObservableList<Alumnos> aux = FXCollections.observableArrayList();
 		
 		try {
 			Statement stmt = conexion.createStatement();
 			ResultSet rset = stmt.executeQuery("SELECT * FROM PRUEBA.ALUMNOS" );
 			while(rset.next()) {
-				aux.add(rset.getString(1));
-				aux.add(rset.getString(2));
-				aux.add(rset.getString(3));
-				aux.add(rset.getString(4));
-				aux.add(rset.getString(5));
+				Alumnos nuevo = new Alumnos(rset.getString(1), rset.getString(2), rset.getString(3), rset.getString(4) , rset.getString(5));
+				aux.add(nuevo);
 			}
 			rset.close();
 			stmt.close();
@@ -130,7 +127,7 @@ public class TestConexion {
 		}catch (SQLException s){
 			s.printStackTrace();
 		}
-		System.out.println(aux);
+		//System.out.println(aux);
 		return aux;
 		
 		
